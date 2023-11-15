@@ -21,6 +21,10 @@ html, body {
   font-family: 'Inter';
 }
 
+p {
+  opacity: 60%;
+}
+
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
