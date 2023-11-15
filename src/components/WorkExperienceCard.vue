@@ -102,5 +102,8 @@ p {
   margin: 0;
 }
 
-
+.experience-card-link {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits text color */
+}
 </style>
