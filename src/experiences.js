@@ -14,7 +14,7 @@ export const experiences = [
         company: "United Wholesale Mortgage",
         dates: "2021 - 2023",
         description: "Factilitating and automating software devlivery processes.",
-        skills: ["Jenkins", "Octopus", "Groovy", "Azure"],
+        skills: ["Jenkins", "Octopus", "Groovy", "VMWare"],
         url: "https://www.uwm.com/"
     },
     {
@@ -22,7 +22,7 @@ export const experiences = [
         titles: ["Software Developer"],
         company: "Auto-Owners Insurance",
         dates: "2020 - 2020",
-        description: "Building web applications using Spring MVC, Angular, and React. ",
+        description: "Built web applications using Spring MVC, Angular, and React.",
         skills: ["Java", "Spring MVC", "Angular", "React"],
         url: "https://www.auto-owners.com/"
     },
@@ -31,8 +31,8 @@ export const experiences = [
         titles: ["System Administrator (Tech Ops)", "Mathematics Tutor"],
         company: "Central Michigan University",
         dates: "2017 - 2020",
-        description: "Tier 2 tech support. Tutoring with calculus and statistics.",
-        skills: ["Calculus", "Statistics", "MacOS", "Permissions"],
+        description: "Maintained critical IT infrastructure and provided advanced technical support, ensuring optimal system performance and reliability. Assisted and taught students in calculus and statistics based courses.",
+        skills: ["Calculus", "Statistics", "MacOS", "Active Directory", "Printer Support"],
         url: "https://www.cmich.edu/"
     },
     {
@@ -40,8 +40,8 @@ export const experiences = [
         titles: ["Intern", "Campus Ambassador"],
         company: "United Wholesale Mortgage",
         dates: "2019 - 2020",
-        description: "Marketing the company",
-        skills: ["Poop", "and", "BIGGER", "POOP"],
+        description: "Fostered strong relationships between the company and the academic community, promoting UWM's culture and opportunities on campus while gaining valuable industry insights.",
+        skills: [".NET", "C#", "MVC", "Acceptance Criteria", "Business Analysis", "Recruiting"],
         url: "https://www.uwm.com/"
     },
     {
@@ -49,8 +49,8 @@ export const experiences = [
         titles: ["Help Desk Analyst"],
         company: "Apple",
         dates: "2018 - 2019",
-        description: "Help dumb people",
-        skills: ["Poop", "and", "smaller", "poop"],
+        description: "Delivered efficient technical support and problem-solving solutions for a diverse range of customer inquiries regarding Apple products and services.",
+        skills: ["Technical Troubleshooting", "Customer Service", "Communication", "Detail-Oriented", "Adaptable"],
         url: "https://www.apple.com/"
     },
 ]
