@@ -29,10 +29,18 @@ const handleSubmit = () => {
   sendEmail(fromEmail.value, subject.value, message.value);
 };
 
+document.addEventListener('mousemove', (e) => {
+  const gradient = document.getElementById('cursor-gradient');
+  gradient.style.left = `${e.clientX}px`;
+  gradient.style.top = `${e.clientY}px`;
+  gradient.style.display = 'block';
+});
+
 </script>
 
 <template>
   <div class="container">
+    <div id="cursor-gradient"></div>
     <div class="sidebar">
       <section id="hero">
         <h1>Lucas A. Magno</h1>
@@ -53,8 +61,8 @@ const handleSubmit = () => {
           <div class="form-group">
             <textarea v-model="message" placeholder="Your Message" required></textarea>
           </div>
-          <div class="form-group">
-            <button type="submit">Send Message</button>
+          <div class="form-group ">
+            <button type="submit" class="button-style">Send Message</button>
           </div>
         </form>
       </section>
@@ -271,5 +279,34 @@ hr {
     width: 100%;
     height: auto;
   }
+}
+#cursor-gradient {
+  position: fixed;
+  pointer-events: none; /* Ensures the gradient doesn't interfere with other elements */
+  border-radius: 50%;
+  width: 700px; /* Adjust size as needed */
+  height: 700px; /* Adjust size as needed */
+  background: radial-gradient(circle, rgba(156, 157, 177, 0.5), rgba(136, 21, 21, 0));
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 1000; /* Ensures it's above other elements */
+  filter: blur(50px); /* Apply blur effect */
+  opacity: 20%;
+}
+
+.button-style {
+  background-color: #007bff; /* Bubble background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Vertical and horizontal padding */
+  border-radius: 15px; /* Rounded corners for bubble shape */
+  font-size: 16px; /* Adjust font size as needed */
+  text-align: center;
+  text-decoration: none; /* Removes underline from link */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.button-style:hover {
+  background-color: #0056b3; /* Darker shade of blue for hover effect */
 }
 </style>
