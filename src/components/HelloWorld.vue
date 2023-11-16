@@ -62,17 +62,20 @@ document.addEventListener('mousemove', (e) => {
             <textarea v-model="message" placeholder="Your Message" required></textarea>
           </div>
           <div class="form-group ">
-            <button type="submit" class="button-style">Send Message</button>
+            <button type="submit" id="button-style">Send Message</button>
           </div>
         </form>
       </section>
 
       <div class="social-media-links">
-        <a href="https://github.com/yourusername" target="_blank" class="icon-link">
+        <a href="https://github.com/lucasamagno" target="_blank" class="icon-link">
           <i class="fab fa-github"></i>
         </a>
-        <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="icon-link">
+        <a href="https://www.linkedin.com/in/lucasamagno" target="_blank" class="icon-link">
           <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://medium.com/@lucasmagno" target="_blank" class="icon-link">
+          <i class="fab fa-medium"></i>
         </a>
       </div>
     </div>
@@ -183,7 +186,7 @@ hr {
 
 .social-media-links {
   position: absolute;
-  bottom: 20%;
+  bottom: 15%;
   left: 30%; /* Adjust as needed */
 }
 
@@ -214,6 +217,7 @@ hr {
   border-radius: 10px;
   width: 75%;
   font-size: 16px;
+  font-family: 'Inter';
 }
 
 .contact-form textarea {
@@ -260,33 +264,80 @@ hr {
   background-color: #0056b3; /* Darker shade of blue for hover effect */
 }
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    height: auto;
-  }
+/* Mobile Phones: max-width of 767px */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
 
-  .sidebar {
-    position: static;
-    width: 100%;
-    height: auto;
-    overflow-y: visible;
-    padding-top: 0;
-  }
+    .sidebar,
+    .content {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
 
-  .content {
-    margin-left: 0;
-    width: 100%;
-    height: auto;
-  }
+    #hero h1 {
+        font-size: 40px;
+    }
+
+    #hero h3 {
+        font-size: 25px;
+    }
+
+    .social-media-links {
+        left: 10%;
+        bottom: 10%;
+    }
+
+    .contact-form input, .contact-form textarea {
+        width: 90%; /* Adjust width */
+    }
+
+    .contact-form button {
+        font-size: 14px; /* Smaller font size for button */
+    }
+
+    .resume-button, #button-style {
+        font-size: 14px; /* Smaller font size for buttons */
+    }
 }
+
+/* Tablets: min-width of 768px and max-width of 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        flex-direction: row; /* Adjust layout */
+    }
+
+    .sidebar,
+    .content {
+        width: 50%;
+        padding: 15px;
+    }
+
+    #hero h1 {
+        font-size: 45px;
+    }
+
+    #hero h3 {
+        font-size: 30px;
+    }
+
+    .social-media-links {
+        bottom: 20%;
+    }
+}
+
+
+
 #cursor-gradient {
   position: fixed;
   pointer-events: none; /* Ensures the gradient doesn't interfere with other elements */
   border-radius: 50%;
-  width: 700px; /* Adjust size as needed */
-  height: 700px; /* Adjust size as needed */
-  background: radial-gradient(circle, rgba(156, 157, 177, 0.5), rgba(136, 21, 21, 0));
+  width: 1000px; /* Adjust size as needed */
+  height: 1000px; /* Adjust size as needed */
+  background: radial-gradient(circle, rgba(0, 191, 255, 0.5), rgba(0, 191, 255, 0));
   transform: translate(-50%, -50%);
   display: none;
   z-index: 1000; /* Ensures it's above other elements */
@@ -294,7 +345,7 @@ hr {
   opacity: 20%;
 }
 
-.button-style {
+#button-style {
   background-color: #007bff; /* Bubble background color */
   color: white; /* Text color */
   padding: 10px 20px; /* Vertical and horizontal padding */
@@ -306,7 +357,7 @@ hr {
   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.button-style:hover {
+#button-style:hover {
   background-color: #0056b3; /* Darker shade of blue for hover effect */
 }
 </style>
