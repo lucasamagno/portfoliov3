@@ -99,6 +99,9 @@ const handleSubmit = () => {
         <div v-for="project in projects" :key="project.id">
           <project-card :project="project" />
         </div>
+        <div class="experience-button">
+          <a href="https://lucasamagno.github.io/myblog" target="_blank" class="resume-button">View Blog</a>
+        </div>
       </section>
     </div>
   </div>
@@ -249,8 +252,24 @@ hr {
   background-color: #0056b3; /* Darker shade of blue for hover effect */
 }
 
-h2 {
-  padding: 0%;
-  margin: 0%;
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    overflow-y: visible;
+    padding-top: 0;
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
 }
 </style>
