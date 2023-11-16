@@ -99,6 +99,7 @@ onMounted(() => {
 
 h3 {
   padding: 0;
+  padding-bottom: 10px;
   margin: 0;
   transition: color 0.3s ease;
 }

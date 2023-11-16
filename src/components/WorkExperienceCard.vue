@@ -10,7 +10,7 @@
       <div class="right-column">
         <h3 :class="{'highlight': isHovering }">{{ experience.titles[0] }} • {{ experience.company }}</h3>
         <div class="other-titles">
-          <p v-for="(title, index) in experience.titles.slice(1)" :key="index" class="additional-title">{{ title }}</p>
+          <p v-for="(title, index) in experience.titles.slice(1)" :key="index" class="additional-title">• {{ title }}</p>
         </div>
         <p class="description">{{ experience.description }}</p>
         <ul class="skills">

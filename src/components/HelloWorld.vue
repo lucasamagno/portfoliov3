@@ -3,6 +3,31 @@ import WorkExperienceCard from "./WorkExperienceCard.vue";
 import { experiences } from '../experiences'
 import { projects } from '../projects'
 import ProjectCard from "./ProjectCard.vue"
+import emailjs from 'emailjs-com'
+import { ref } from "vue";
+
+const fromEmail = ref('')
+const subject = ref('')
+const message = ref('')
+
+function sendEmail() {
+  emailjs.send("service_izwy97u", "template_3ke76hi", {
+    from_name: fromEmail.value,
+    subject: subject.value,
+    message: message.value,
+  }).then((response) => {
+    console.log('SUCCESS!', response.status, response.text);
+    fromEmail.value = '';
+    subject.value = '';
+    message.value = '';
+  }, (err) => {
+    console.error('EMAIL FAILED...', err);
+  });
+}
+
+const handleSubmit = () => {
+  sendEmail(fromEmail.value, subject.value, message.value);
+};
 
 </script>
 
@@ -17,16 +42,16 @@ import ProjectCard from "./ProjectCard.vue"
 
       <section id="contact">
         <h2>Work with me</h2>
-        <p></p>
-        <form class="contact-form">
+        <p>Send me a message and lets chat!</p>
+        <form class="contact-form" @submit.prevent="handleSubmit" ref="form">
           <div class="form-group">
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <input type="email" v-model="fromEmail" placeholder="Your Email" required>
           </div>
           <div class="form-group">
-            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            <input type="text" v-model="subject" placeholder="Subject" required>
           </div>
           <div class="form-group">
-            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <textarea v-model="message" placeholder="Your Message" required></textarea>
           </div>
           <div class="form-group">
             <button type="submit">Send Message</button>
@@ -58,8 +83,12 @@ import ProjectCard from "./ProjectCard.vue"
 
       <section id="experience">
         <h2>Work Experience</h2>
+        
         <div v-for="experience in experiences" :key="experience.id">
-         <work-experience-card :experience="experience" />
+          <work-experience-card :experience="experience" />
+        </div>
+        <div class="experience-button">
+          <a href="https://drive.google.com/file/d/1EMLM_gmHWMIMxVqmUj3rH782DMLb7t9v/view?usp=sharing" target="_blank" class="resume-button">View Full Resume</a>
         </div>
       </section>
 
@@ -79,6 +108,7 @@ import ProjectCard from "./ProjectCard.vue"
 .container {
   display: flex;
   height: 100vh;
+  overflow-y: hidden;
 }
 
 .form-group input::placeholder,
@@ -94,7 +124,7 @@ import ProjectCard from "./ProjectCard.vue"
   top: 0;
   left: 0;
   bottom: 0;
-  overflow-y: auto;
+  overflow-y: hidden;
   height: 100vh;
   padding-top: 5%;
 }
@@ -102,10 +132,10 @@ import ProjectCard from "./ProjectCard.vue"
 .content {
   padding-top: 5%;
   text-align: left;
-  margin-left: 50%; /* Same as the width of the sidebar */
-  width: 50%; /* Adjusted width */
+  margin-left: 50%;
+  width: 50%;
   overflow-y: auto;
-  height: 100vh;
+  height: calc(100vh - 10%); /* Adjust height to account for padding */
   padding-right: 10%;
 }
 
@@ -119,10 +149,6 @@ h1 {
   text-align: left;
   padding-left: 30%;
   padding-right: 10%;
-}
-
-#about {
-  
 }
 
 hr {
@@ -151,11 +177,11 @@ hr {
 }
 
 #experience {
-  /* Styles for Work Experience Section */
+  
 }
 
 #projects {
-  /* Styles for Projects Section */
+  
 }
 
 #contact {
@@ -196,5 +222,35 @@ hr {
 
 .contact-form button:hover {
   background-color: #45a049;
+}
+
+.experience-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+}
+
+
+.resume-button {
+  display: inline-block;
+  background-color: #007bff; /* Bubble background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Vertical and horizontal padding */
+  margin-top: 20px;
+  border-radius: 15px; /* Rounded corners for bubble shape */
+  font-size: 16px; /* Adjust font size as needed */
+  text-align: center;
+  text-decoration: none; /* Removes underline from link */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.resume-button:hover {
+  background-color: #0056b3; /* Darker shade of blue for hover effect */
+}
+
+h2 {
+  padding: 0%;
+  margin: 0%;
 }
 </style>

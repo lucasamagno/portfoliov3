@@ -4,7 +4,7 @@ export const projects = [
         title: "mohijazi.com",
         image: require("./assets/mohijazi.png"), 
         description: "Portfolio website built for Regional Safety Manager at Bosch.",
-        tools: ["Vue", "GitHub Pages"],
+        tools: ["Vue", "JavaScript", "HTML", "CSS", "GitHub Pages"],
         url: "https://lucasamagno.github.io/mohijazi"
     },
     {
