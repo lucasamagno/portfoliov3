@@ -44,7 +44,7 @@ export const experiences = [
         company: "United Wholesale Mortgage",
         dates: "2019 - 2020",
         description: "At UWM, I bridged the gap between the company and academia, promoting opportunities while enhancing my .NET development skills and scrum proficiency.",
-        skills: [".NET", "C#", "MVC", "Acceptance Criteria", "User Story Creation", "Recruiting"],
+        skills: [".NET Framework", ".NET Core","C#", "MVC", "Acceptance Criteria", "User Story Creation", "Recruiting"],
         url: "https://www.uwm.com/"
     },
     {
