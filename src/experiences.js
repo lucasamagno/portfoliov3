@@ -4,8 +4,9 @@ export const experiences = [
         titles: ["Software Engineer"],
         company: "Sparen Homes",
         dates: "2023 - Present",
-        description: "Developing and maintaining web applications with Vue.js and Django.",
-        skills: ["Jenkins", "Django", "Vue.js", "AWS"],
+        description: "idk yet",
+        skills: ["Jenkins", "Groovy", "Django", "Vue.js", "AWS", "Python", "TypeScript", "Hasura", "GraphQL",
+                "SonarQube"],
         url: "https://www.sparenhomes.com/"
     },
     {
@@ -14,7 +15,9 @@ export const experiences = [
         company: "United Wholesale Mortgage",
         dates: "2021 - 2023",
         description: "Factilitating and automating software devlivery processes.",
-        skills: ["Jenkins", "Octopus", "Groovy", "VMWare"],
+        skills: ["Jenkins", "Octopus", "Groovy", "VMWare", "JIRA", "Confluence", "Bitbucket", "TFS", 
+                "Dynatrace", "Communication", "Detail-Oriented", "User Story Creation", "Scrum", "Kanban",
+                "SonarQube", ".NET Core", "Blue-green Deployment", "Deployment Incident Analysis"],
         url: "https://www.uwm.com/"
     },
     {
@@ -22,8 +25,8 @@ export const experiences = [
         titles: ["Software Developer"],
         company: "Auto-Owners Insurance",
         dates: "2020 - 2020",
-        description: "Built web applications using Spring MVC, Angular, and React.",
-        skills: ["Java", "Spring MVC", "Angular", "React"],
+        description: "Frontend and backend application development for the Marketing Systems team.",
+        skills: ["Java", "Spring", "Angular", "React", "Jenkins", "DB2", "SQL", "Scrum"],
         url: "https://www.auto-owners.com/"
     },
     {

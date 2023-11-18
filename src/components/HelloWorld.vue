@@ -88,8 +88,7 @@ document.addEventListener('mousemove', (e) => {
     <div class="content">
       <section id="about">
         <h2>About Me</h2>
-        <p>In 2014, as I was developing new skills with Adobe Premiere, After Effects, and Cinema 4D, it felt like a natural progression to embark on my development journey with my first programming class in with C++. 
-          Fast-forward to today, and I’ve built a large and very diverse skill set while working at companies such as Apple, United Wholesale Mortgage, a start-up, and more.</p>
+        <p>Kayla help me</p>
         <p>My main focus these days is building Sparen Homes along with freelance work.</p>
         <p>When I'm not on my computer, I'm usually outside, listening to music, or traveling with my girlfriend.</p>
       </section>
@@ -274,23 +273,30 @@ h2 {
     }
 
     .sidebar {
-        width: 100%; 
-        position: static; 
-        height: auto; 
-        overflow-y: visible; 
-        padding: 10px; 
-        padding-left: 10px;
+        width: 100%; /* Full width */
+        position: static; /* Adjust position for mobile */
+        overflow-y: visible; /* Allow scrolling if needed */
+        padding: 10px; /* Add padding on all sides */
+        box-sizing: border-box; /* Include padding in the width calculation */
+    }
+
+    .content {
+        width: 100%; /* Ensure content does not exceed the width of the screen */
+        margin: 0;
+        padding: 10px; /* Adjust padding to ensure content fits within the screen */
+        box-sizing: border-box; /* Include padding and border in the element's width */
     }
 
     #hero, #contact {
-      padding-left: 10px;
-      padding-right: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
-      
-    .content {
-        width: 100%;
-        margin: 0;
-        padding: 10px;
+
+    .form-group input[type="email"],
+    .form-group input[type="text"],
+    .form-group textarea {
+        width: 100%; /* Full width of the container */
+        box-sizing: border-box; /* Include padding and border in the width */
     }
 
     #hero h1 {
@@ -302,28 +308,20 @@ h2 {
     }
 
     .social-media-links {
-        position: static; 
+        position: static;
         margin-top: 20px;
-        text-align: center; 
-        padding-bottom: 20px; 
+        text-align: center;
+        padding-bottom: 20px;
     }
 
     .icon-link {
-        margin-right: 15px; 
-        font-size: 24px; 
-    }
-
-    .contact-form input[type="email"],
-    .contact-form input[type="text"],
-    .contact-form textarea {
-        width: calc(100% - 20px); 
-        padding: 10px; 
-        box-sizing: border-box;
+        margin-right: 15px;
+        font-size: 24px;
     }
 
     .contact-form button,
     .resume-button, #button-style {
-        font-size: 16px; 
+        font-size: 16px;
     }
 
     .contact-form .form-group {
@@ -331,7 +329,7 @@ h2 {
     }
 
     .contact-form button {
-        width: calc(100% - 20px); 
+        width: 100%;
     }
 }
 
