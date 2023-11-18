@@ -50,8 +50,8 @@ onMounted(() => {
 }
 
 .project-card:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
-  filter: brightness(1.4); /* Increase brightness on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+  filter: brightness(1.4); 
 }
 
 .project-card-link {
@@ -60,33 +60,33 @@ onMounted(() => {
 }
 
 .project-card:hover .project-image {
-  transform: translateY(-10px); /* Moves the image up by 10px on hover */
+  transform: translateY(-10px); 
 }
 
 .left-column {
-  flex: 1; /* Adjust as necessary */
+  flex: 1; 
   display: flex;
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
+  justify-content: center; 
+  align-items: center; 
 }
 
 .project-image {
-  max-width: 100%; /* Ensure the image is responsive */
-  border-radius: 10px; /* Optional: for styled image corners */
-  transition: transform 0.3s ease; /* Smooth transition for the transform effect */
+  max-width: 100%; 
+  border-radius: 10px; 
+  transition: transform 0.3s ease; 
 }
 
 .right-column {
-  flex: 2; /* Adjust as necessary */
-  padding-left: 20px; /* Space between image and content */
+  flex: 2; 
+  padding-left: 20px; 
 }
 
 .tools {
-  list-style: none; /* Removes default list bullets */
-  padding: 0; /* Removes default padding */
-  display: flex; /* Display skills inline */
-  flex-wrap: wrap; /* Wrap to the next line if space runs out */
-  gap: 10px; /* Spacing between skill bubbles */
+  list-style: none; 
+  padding: 0; 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 10px; 
 }
 
 .highlight {
@@ -94,11 +94,11 @@ onMounted(() => {
 }
 
 .tool-bubble {
-  background-color: #007bff; /* Bubble background color */
-  color: white; /* Text color */
-  padding: 5px 10px; /* Vertical and horizontal padding */
-  border-radius: 15px; /* Rounded corners for bubble shape */
-  font-size: 0.85em; /* Adjust font size as needed */
+  background-color: #007bff; 
+  color: white; 
+  padding: 5px 10px; 
+  border-radius: 15px; 
+  font-size: 0.85em; 
   cursor: pointer;
 }
 
@@ -107,7 +107,7 @@ h3 {
   padding-bottom: 10px;
   margin: 0;
   transition: color 0.3s ease;
-  font-weight: 500; /* Medium */
+  font-weight: 500; 
   opacity: 70%;
 }
 
@@ -117,7 +117,7 @@ p {
 }
 
 .project-card-link {
-  text-decoration: none; /* Removes underline */
-  color: inherit; /* Inherits text color */
+  text-decoration: none;
+  color: inherit; 
 }
 </style>

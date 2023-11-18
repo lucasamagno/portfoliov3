@@ -48,36 +48,36 @@ onMounted(() => {
   display: flex;
   padding: 20px;
   position: relative; 
-  margin-bottom: 10px; /* Adds space between cards */
-  transition: filter 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform, filter, and shadow */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  margin-bottom: 10px; 
+  transition: filter 0.3s ease, box-shadow 0.3s ease; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
   background-color: #09162c;
   border-radius: 20px;
 }
 
 .experience-card:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
-  filter: brightness(1.4); /* Increase brightness on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+  filter: brightness(1.4); 
 }
 
 .experience-card:hover .arrow-icon {
-  transform: translateY(-5px) scale(1.2); /* Move up and scale on hover */
+  transform: translateY(-5px) scale(1.2); 
 }
 
 .left-column {
-  flex: 0.7; /* Adjust as necessary for your design */
+  flex: 0.7; 
 }
 
 .right-column {
-  flex: 2; /* Adjust as necessary for your design */
+  flex: 2; 
 }
 
 .skills {
-  list-style: none; /* Removes default list bullets */
-  padding: 0; /* Removes default padding */
-  display: flex; /* Display skills inline */
-  flex-wrap: wrap; /* Wrap to the next line if space runs out */
-  gap: 10px; /* Spacing between skill bubbles */
+  list-style: none; 
+  padding: 0; 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 10px; 
 }
 
 .highlight {
@@ -85,11 +85,11 @@ onMounted(() => {
 }
 
 .skill-bubble {
-  background-color: #007bff; /* Bubble background color */
-  color: white; /* Text color */
-  padding: 5px 10px; /* Vertical and horizontal padding */
-  border-radius: 15px; /* Rounded corners for bubble shape */
-  font-size: 0.85em; /* Adjust font size as needed */
+  background-color: #007bff; 
+  color: white; 
+  padding: 5px 10px; 
+  border-radius: 15px; 
+  font-size: 0.85em;
   cursor: pointer;
 }
 
@@ -102,7 +102,7 @@ h3 {
   padding: 0;
   margin: 0;
   transition: color 0.3s ease;
-  font-weight: 500; /* Medium */
+  font-weight: 500; 
   opacity: 70%;
 }
 
@@ -112,19 +112,19 @@ p {
 }
 
 .experience-card-link {
-  text-decoration: none; /* Removes underline */
-  color: inherit; /* Inherits text color */
+  text-decoration: none; 
+  color: inherit; 
 }
 
 .arrow-icon {
-  position: absolute; /* Position it absolutely within the card */
-  bottom: 10px; /* Distance from the top */
-  left: 10px; /* Distance from the right */
+  position: absolute; 
+  bottom: 10px; 
+  left: 10px; 
   transition: transform 0.3s ease;
   opacity: 60%;
 }
 
 .hovered {
-  transform: translateY(-5px) scale(1.2); /* Subtle move up and scale */
+  transform: translateY(-5px) scale(1.2); 
 }
 </style>

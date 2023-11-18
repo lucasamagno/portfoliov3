@@ -131,13 +131,13 @@ document.addEventListener('mousemove', (e) => {
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  font-family: 'Inter', sans-serif; /* Replace with your desired font */
-  font-size: 16px; /* Adjust the size as needed */
-  color: #666; /* Adjust the color as needed */
+  font-family: 'Inter', sans-serif; 
+  font-size: 16px;
+  color: #666;
 }
 
 .sidebar {
-  width: 50%; /* 50% of the viewport width */
+  width: 50%;
   position: fixed;
   top: 0;
   left: 0;
@@ -153,7 +153,7 @@ document.addEventListener('mousemove', (e) => {
   margin-left: 50%;
   width: 50%;
   overflow-y: auto;
-  height: calc(100vh - 10%); /* Adjust height to account for padding */
+  height: calc(100vh - 10%);
   padding-right: 10%;
 }
 
@@ -172,26 +172,26 @@ h1 {
 hr {
   border: 0;
   height: 1px;
-  background-color: #ccc; /* or any color you prefer */
+  background-color: #ccc;
   margin-top: 30px;
   margin-bottom: 20px;
 }
 
 .icon-link {
-  color: grey; /* Initial color */
-  transition: color 0.3s; /* Smooth transition for hover effect */
-  margin-right: 30px; /* Spacing between icons */
+  color: grey;
+  transition: color 0.3s;
+  margin-right: 30px;
   font-size: 30px;
 }
 
 .icon-link:hover {
-  color: white; /* Color change on hover */
+  color: white; 
 }
 
 .social-media-links {
   position: absolute;
   bottom: 15%;
-  left: 30%; /* Adjust as needed */
+  left: 30%;
 }
 
 #contact {
@@ -217,12 +217,12 @@ hr {
 }
 
 .contact-form textarea {
-  height: 100px; /* Adjust height as needed */
-  resize: vertical; /* Allow vertical resize */
+  height: 100px;
+  resize: vertical;
 }
 
 .contact-form button {
-  background-color: #007bff; /* Example button color */
+  background-color: #007bff;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -238,30 +238,30 @@ hr {
 .experience-button {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centers content horizontally */
+  align-items: center; 
 }
 
 
 .resume-button {
   display: inline-block;
-  background-color: #007bff; /* Bubble background color */
-  color: white; /* Text color */
-  padding: 10px 20px; /* Vertical and horizontal padding */
+  background-color: #007bff; 
+  color: white; 
+  padding: 10px 20px; 
   margin-top: 20px;
-  border-radius: 15px; /* Rounded corners for bubble shape */
-  font-size: 16px; /* Adjust font size as needed */
+  border-radius: 15px; 
+  font-size: 16px; 
   text-align: center;
-  text-decoration: none; /* Removes underline from link */
+  text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  transition: background-color 0.3s ease; 
 }
 
 .resume-button:hover {
-  background-color: #0056b3; /* Darker shade of blue for hover effect */
+  background-color: #0056b3;
 }
 
 h2 {
-  font-weight: 500; /* Medium */
+  font-weight: 500;
   opacity: 80%;
 }
 
@@ -293,15 +293,15 @@ h2 {
     }
 
     .contact-form input, .contact-form textarea {
-        width: 90%; /* Adjust width */
+        width: 90%;
     }
 
     .contact-form button {
-        font-size: 14px; /* Smaller font size for button */
+        font-size: 14px; 
     }
 
     .resume-button, #button-style {
-        font-size: 14px; /* Smaller font size for buttons */
+        font-size: 14px;
     }
 }
 
@@ -334,31 +334,31 @@ h2 {
 
 #cursor-gradient {
   position: fixed;
-  pointer-events: none; /* Ensures the gradient doesn't interfere with other elements */
+  pointer-events: none; 
   border-radius: 50%;
-  width: 1000px; /* Adjust size as needed */
-  height: 1000px; /* Adjust size as needed */
+  width: 1000px; 
+  height: 1000px;
   background: radial-gradient(circle, rgba(0, 191, 255, 0.5), rgba(0, 191, 255, 0));
   transform: translate(-50%, -50%);
   display: none;
-  z-index: 1000; /* Ensures it's above other elements */
-  filter: blur(50px); /* Apply blur effect */
+  z-index: 1000;
+  filter: blur(50px);
   opacity: 20%;
 }
 
 #button-style {
-  background-color: #007bff; /* Bubble background color */
-  color: white; /* Text color */
-  padding: 10px 20px; /* Vertical and horizontal padding */
-  border-radius: 15px; /* Rounded corners for bubble shape */
-  font-size: 16px; /* Adjust font size as needed */
+  background-color: #007bff;
+  color: white; 
+  padding: 10px 20px;
+  border-radius: 15px; 
+  font-size: 16px; 
   text-align: center;
-  text-decoration: none; /* Removes underline from link */
+  text-decoration: none; 
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  transition: background-color 0.3s ease;
 }
 
 #button-style:hover {
-  background-color: #0056b3; /* Darker shade of blue for hover effect */
+  background-color: #0056b3;
 }
 </style>
