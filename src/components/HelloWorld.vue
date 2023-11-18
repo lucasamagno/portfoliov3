@@ -270,9 +270,23 @@ h2 {
     .container {
         flex-direction: column;
         height: auto;
+        overflow-y: auto; 
     }
 
-    .sidebar,
+    .sidebar {
+        width: 100%; 
+        position: static; 
+        height: auto; 
+        overflow-y: visible; 
+        padding: 10px; 
+        padding-left: 10px;
+    }
+
+    #hero, #contact {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+      
     .content {
         width: 100%;
         margin: 0;
@@ -280,7 +294,7 @@ h2 {
     }
 
     #hero h1 {
-        font-size: 40px;
+        font-size: 36px;
     }
 
     #hero h3 {
@@ -288,27 +302,43 @@ h2 {
     }
 
     .social-media-links {
-        left: 10%;
-        bottom: 10%;
+        position: static; 
+        margin-top: 20px;
+        text-align: center; 
+        padding-bottom: 20px; 
     }
 
-    .contact-form input, .contact-form textarea {
-        width: 90%;
+    .icon-link {
+        margin-right: 15px; 
+        font-size: 24px; 
+    }
+
+    .contact-form input[type="email"],
+    .contact-form input[type="text"],
+    .contact-form textarea {
+        width: calc(100% - 20px); 
+        padding: 10px; 
+        box-sizing: border-box;
+    }
+
+    .contact-form button,
+    .resume-button, #button-style {
+        font-size: 16px; 
+    }
+
+    .contact-form .form-group {
+        margin-bottom: 10px;
     }
 
     .contact-form button {
-        font-size: 14px; 
-    }
-
-    .resume-button, #button-style {
-        font-size: 14px;
+        width: calc(100% - 20px); 
     }
 }
 
 /* Tablets: min-width of 768px and max-width of 1023px */
 @media (min-width: 768px) and (max-width: 1023px) {
     .container {
-        flex-direction: row; /* Adjust layout */
+        flex-direction: row;
     }
 
     .sidebar,
