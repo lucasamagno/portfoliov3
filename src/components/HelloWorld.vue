@@ -335,16 +335,30 @@ h2 {
     }
 }
 
-/* Tablets: min-width of 768px and max-width of 1023px */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .container {
-        flex-direction: row;
+/* Tablets: min-width of 768px and max-width of 1366px */
+@media (min-width: 768px) and (max-width: 1366px) {
+    .container {  
+        display: flex;
+        height: auto; 
+        overflow-x: hidden;
     }
 
-    .sidebar,
-    .content {
+    .sidebar {
         width: 50%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        overflow-y: auto;
+    }
+
+    .content {
+        width: 50%; 
+        margin-left: 50%; 
+        position: relative;
         padding: 15px;
+        overflow-y: auto;
+        height: auto; 
     }
 
     #hero h1 {
@@ -356,10 +370,10 @@ h2 {
     }
 
     .social-media-links {
-        bottom: 20%;
+        position: static;
+        margin-top: 10px;
     }
 }
-
 
 
 #cursor-gradient {
