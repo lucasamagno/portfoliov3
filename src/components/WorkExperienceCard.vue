@@ -51,7 +51,7 @@ onMounted(() => {
   margin-bottom: 10px; 
   transition: filter 0.3s ease, box-shadow 0.3s ease; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-  background-color: #09162c;
+  background-color: #040911;
   border-radius: 20px;
 }
 

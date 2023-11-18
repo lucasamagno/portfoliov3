@@ -4,7 +4,7 @@ export const experiences = [
         titles: ["Software Engineer"],
         company: "Sparen Homes",
         dates: "2023 - Present",
-        description: "idk yet",
+        description: "Developed a home listings data aggregation system, integrated frontend and backend functionality enabling home purchase offers, implemented 2FA for enhanced security, and established CI/CD pipelines.",
         skills: ["Jenkins", "Groovy", "Django", "Vue.js", "AWS", "Python", "TypeScript", "Hasura", "GraphQL",
                 "SonarQube"],
         url: "https://www.sparenhomes.com/"
@@ -14,8 +14,8 @@ export const experiences = [
         titles: ["DevOps Engineer", "Release Engineer", "Business Analyst/Scrum Master"],
         company: "United Wholesale Mortgage",
         dates: "2021 - 2023",
-        description: "Factilitating and automating software devlivery processes.",
-        skills: ["Jenkins", "Octopus", "Groovy", "VMWare", "JIRA", "Confluence", "Bitbucket", "TFS", 
+        description: "Automated software delivery with Jenkins pipelines and Octopus deployment processes, coordinated blue-green production releases, monitored and resolved environment issues, and identified automation needs for a Selenium framework.",
+        skills: ["Jenkins", "Octopus", "Groovy", "Selenium", "VMWare", "JIRA", "Confluence", "Bitbucket", "TFS", 
                 "Dynatrace", "Communication", "Detail-Oriented", "User Story Creation", "Scrum", "Kanban",
                 "SonarQube", ".NET Core", "Blue-green Deployment", "Deployment Incident Analysis"],
         url: "https://www.uwm.com/"
@@ -25,7 +25,7 @@ export const experiences = [
         titles: ["Software Developer"],
         company: "Auto-Owners Insurance",
         dates: "2020 - 2020",
-        description: "Frontend and backend application development for the Marketing Systems team.",
+        description: "Handled end-to-end application development for the Marketing Systems team, which involved designing endpoints and constructing React components for a custom marketing representative dashboard.",
         skills: ["Java", "Spring", "Angular", "React", "Jenkins", "DB2", "SQL", "Scrum"],
         url: "https://www.auto-owners.com/"
     },
@@ -34,8 +34,8 @@ export const experiences = [
         titles: ["System Administrator (Tech Ops)", "Mathematics Tutor"],
         company: "Central Michigan University",
         dates: "2017 - 2020",
-        description: "Maintained critical IT infrastructure and provided advanced technical support, ensuring optimal system performance and reliability. Assisted and taught students in calculus and statistics based courses.",
-        skills: ["Calculus", "Statistics", "MacOS", "Active Directory", "Printer Support"],
+        description: "Maintained critical IT infrastructure and provided advanced technical support to ensure optimal system performance and reliability. Additionally, I tutored students in a range of courses, including algebra, calculus, statistics, trigonometry, and geometry.",
+        skills: ["MacOS", "Active Directory", "Printer Support", "Technical Support", "Windows 10", "Calculus", "Statistics", "Geometry", "Trigonmetry", "Alegbra"],
         url: "https://www.cmich.edu/"
     },
     {
@@ -43,8 +43,8 @@ export const experiences = [
         titles: ["Intern", "Campus Ambassador"],
         company: "United Wholesale Mortgage",
         dates: "2019 - 2020",
-        description: "Fostered strong relationships between the company and the academic community, promoting UWM's culture and opportunities on campus while gaining valuable industry insights.",
-        skills: [".NET", "C#", "MVC", "Acceptance Criteria", "Business Analysis", "Recruiting"],
+        description: "At UWM, I bridged the gap between the company and academia, promoting opportunities while enhancing my .NET development skills and scrum proficiency.",
+        skills: [".NET", "C#", "MVC", "Acceptance Criteria", "User Story Creation", "Recruiting"],
         url: "https://www.uwm.com/"
     },
     {
@@ -52,8 +52,8 @@ export const experiences = [
         titles: ["Help Desk Analyst"],
         company: "Apple",
         dates: "2018 - 2019",
-        description: "Delivered efficient technical support and problem-solving solutions for a diverse range of customer inquiries regarding Apple products and services.",
-        skills: ["Technical Troubleshooting", "Customer Service", "Communication", "Detail-Oriented", "Adaptable"],
+        description: "Delivered technical support and problem-solving solutions for a diverse range of customer inquiries regarding Apple products and services.",
+        skills: ["Technical Troubleshooting", "Customer Service", "Communication", "Detail-Oriented", "Adaptable", "iOS", "watchOS"],
         url: "https://www.apple.com/"
     },
 ]

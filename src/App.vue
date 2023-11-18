@@ -17,7 +17,7 @@ export default {
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #09162c;
+  background-color: #040911;
   font-family: 'Inter';
 }
 

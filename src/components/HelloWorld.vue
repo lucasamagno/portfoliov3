@@ -88,9 +88,13 @@ document.addEventListener('mousemove', (e) => {
     <div class="content">
       <section id="about">
         <h2>About Me</h2>
-        <p>Kayla help me</p>
-        <p>My main focus these days is building Sparen Homes along with freelance work.</p>
-        <p>When I'm not on my computer, I'm usually outside, listening to music, or traveling with my girlfriend.</p>
+        <p>Hello and welcome! </p>
+        <p>
+          I'm Lucas, a Full Stack Software Engineer and 2020 graduate of Central Michigan University's Computer Science program. 
+          Over the last 3 years, I have been actively pursuing freelance work and building technology in the real estate and mortgage industries. 
+          On the side, I work with and mentor students from low-income and underprivelged communities. 
+          I also enjoy snowboarding, making kombucha, and traveling with my girlfriend.
+        </p>
       </section>
 
       <hr>
