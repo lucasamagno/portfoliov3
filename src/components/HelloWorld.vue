@@ -335,6 +335,10 @@ h2 {
     .contact-form button {
         width: 100%;
     }
+
+    #cursor-gradient {
+      display: block;
+    }
 }
 
 /* Tablets: min-width of 768px and max-width of 1366px */
@@ -375,14 +379,17 @@ h2 {
         position: static;
         margin-top: 10px;
     }
+    #cursor-gradient {
+    display: block;
+  }
 }
 
 
 #cursor-gradient {
   position: fixed;
-  pointer-events: none; 
+  pointer-events: none;
   border-radius: 50%;
-  width: 1000px; 
+  width: 1000px;
   height: 1000px;
   background: radial-gradient(circle, rgba(0, 191, 255, 0.5), rgba(0, 191, 255, 0));
   transform: translate(-50%, -50%);
