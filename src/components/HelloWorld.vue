@@ -4,11 +4,13 @@ import { experiences } from '../experiences'
 import { projects } from '../projects'
 import ProjectCard from "./ProjectCard.vue"
 import emailjs from 'emailjs-com'
+import { useToast } from 'vue-toastification';
 import { ref } from "vue";
 
 const fromEmail = ref('')
 const subject = ref('')
 const message = ref('')
+const toast = useToast();
 
 function sendEmail() {
   emailjs.send("service_izwy97u", "template_3ke76hi", {
@@ -17,11 +19,13 @@ function sendEmail() {
     message: message.value,
   }).then((response) => {
     console.log('SUCCESS!', response.status, response.text);
+    toast.success("Message sent successfully!");
     fromEmail.value = '';
     subject.value = '';
     message.value = '';
   }, (err) => {
     console.error('EMAIL FAILED...', err);
+    toast.error("Failed to send message.");
   });
 }
 
@@ -43,8 +47,8 @@ document.addEventListener('mousemove', (e) => {
     <div id="cursor-gradient"></div>
     <div class="sidebar">
       <section id="hero">
-        <h1>Lucas A. Magno</h1>
-        <h3>Software Engineer / DevOps Engineer</h3>
+        <h1 id="name">Lucas A. Magno</h1>
+        <h2>Software Engineer / DevOps Engineer</h2>
         <p>I build user friendly software solutions and streamline development workflows.</p>
       </section>
 
@@ -190,14 +194,6 @@ hr {
   left: 30%; /* Adjust as needed */
 }
 
-#experience {
-  
-}
-
-#projects {
-  
-}
-
 #contact {
   margin-top: 7%;
   text-align: left;
@@ -262,6 +258,11 @@ hr {
 
 .resume-button:hover {
   background-color: #0056b3; /* Darker shade of blue for hover effect */
+}
+
+h2 {
+  font-weight: 500; /* Medium */
+  opacity: 80%;
 }
 
 /* Mobile Phones: max-width of 767px */

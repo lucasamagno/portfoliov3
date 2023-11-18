@@ -1,5 +1,4 @@
 <template>
-
   <a :href="experience.url" target="_blank" class="experience-card-link">
     <div class="experience-card"
         @mouseover="isHovering = true" 
@@ -14,11 +13,14 @@
         </div>
         <p class="description">{{ experience.description }}</p>
         <ul class="skills">
-          <li v-for="skill in experience.skills" :key="skill" class="skill-bubble" 
-              @mouseover="isHovering = true" 
-              @mouseleave="isHovering = false">{{ skill }}</li>
+          <li v-for="skill in experience.skills" :key="skill" class="skill-bubble">{{ skill }}</li>
         </ul>
       </div>
+      <span class="arrow-icon" :class="{'hovered': isHovering}">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 20L20 4M20 4V20M20 4H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
     </div>
   </a>
 </template>
@@ -45,6 +47,7 @@ onMounted(() => {
 .experience-card {
   display: flex;
   padding: 20px;
+  position: relative; 
   margin-bottom: 10px; /* Adds space between cards */
   transition: filter 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform, filter, and shadow */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
@@ -55,6 +58,10 @@ onMounted(() => {
 .experience-card:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
   filter: brightness(1.4); /* Increase brightness on hover */
+}
+
+.experience-card:hover .arrow-icon {
+  transform: translateY(-5px) scale(1.2); /* Move up and scale on hover */
 }
 
 .left-column {
@@ -95,6 +102,8 @@ h3 {
   padding: 0;
   margin: 0;
   transition: color 0.3s ease;
+  font-weight: 500; /* Medium */
+  opacity: 70%;
 }
 
 p {
@@ -105,5 +114,17 @@ p {
 .experience-card-link {
   text-decoration: none; /* Removes underline */
   color: inherit; /* Inherits text color */
+}
+
+.arrow-icon {
+  position: absolute; /* Position it absolutely within the card */
+  bottom: 10px; /* Distance from the top */
+  left: 10px; /* Distance from the right */
+  transition: transform 0.3s ease;
+  opacity: 60%;
+}
+
+.hovered {
+  transform: translateY(-5px) scale(1.2); /* Subtle move up and scale */
 }
 </style>

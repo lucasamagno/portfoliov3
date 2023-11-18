@@ -59,6 +59,10 @@ onMounted(() => {
   color: inherit;
 }
 
+.project-card:hover .project-image {
+  transform: translateY(-10px); /* Moves the image up by 10px on hover */
+}
+
 .left-column {
   flex: 1; /* Adjust as necessary */
   display: flex;
@@ -69,6 +73,7 @@ onMounted(() => {
 .project-image {
   max-width: 100%; /* Ensure the image is responsive */
   border-radius: 10px; /* Optional: for styled image corners */
+  transition: transform 0.3s ease; /* Smooth transition for the transform effect */
 }
 
 .right-column {
@@ -102,6 +107,8 @@ h3 {
   padding-bottom: 10px;
   margin: 0;
   transition: color 0.3s ease;
+  font-weight: 500; /* Medium */
+  opacity: 70%;
 }
 
 p {
