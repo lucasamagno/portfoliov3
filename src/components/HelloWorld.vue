@@ -106,7 +106,7 @@ document.addEventListener('mousemove', (e) => {
           <work-experience-card :experience="experience" />
         </div>
         <div class="experience-button">
-          <a href="https://drive.google.com/file/d/1EMLM_gmHWMIMxVqmUj3rH782DMLb7t9v/view?usp=sharing" target="_blank" class="resume-button">View Full Resume</a>
+          <a href="https://docs.google.com/document/d/e/2PACX-1vRx3ic_HkDeYYUmefKk8Cc4cHFl_Q1skPYsf3ecYouMEKv1Va2NU8dCHJ-Mg_Zd4SyHIGCRuSPV9iVn/pub" target="_blank" class="resume-button">View Full Resume</a>
         </div>
       </section>
 
