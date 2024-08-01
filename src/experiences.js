@@ -1,7 +1,25 @@
 export const experiences = [
     {
         id: 1,
-        titles: ["Software Engineer"],
+        titles: ["Support Engineer"],
+        company: "SmartBear",
+        dates: "2024 - Present",
+        description: "As a Support Engineer at SmartBear Software, I provide technical support for the Collaborator product, develop comprehensive documentation, and collaborate with Sales Engineers to seamlessly integrate the product into clients' ecosystems.",
+        skills: ["Salesforce", "Java", "Python", "Tomcat", "JIRA", "Confluence", "Networking", "Linux", "AWS"],
+        url: "https://www.smartbear.com"
+    },
+    {
+        id: 2,
+        titles: ["Student Agent"],
+        company: "Student Success Agency",
+        dates: "2023 - Present",
+        description: "Mentored young students, facilitated university and career exploration, and served as a camp counselor, promoting a positive and inclusive environment.",
+        skills: ["Youth Development", "Mentorship", "Leadership"],
+        url: "https://studentsuccess.co"
+    },
+    {
+        id: 3,
+        titles: ["Full Stack Engineer"],
         company: "Sparen Homes",
         dates: "2023 - Present",
         description: "Developed a home listings data aggregation system, integrated frontend and backend functionality enabling home purchase offers, implemented 2FA for enhanced security, and established CI/CD pipelines.",
@@ -10,7 +28,7 @@ export const experiences = [
         url: "https://www.sparenhomes.com/"
     },
     {
-        id: 2,
+        id: 4,
         titles: ["DevOps Engineer", "Release Engineer", "Business Analyst/Scrum Master"],
         company: "United Wholesale Mortgage",
         dates: "2021 - 2023",
@@ -21,7 +39,7 @@ export const experiences = [
         url: "https://www.uwm.com/"
     },
     {
-        id: 3,
+        id: 5,
         titles: ["Software Developer"],
         company: "Auto-Owners Insurance",
         dates: "2020 - 2020",
@@ -30,7 +48,7 @@ export const experiences = [
         url: "https://www.auto-owners.com/"
     },
     {
-        id: 4,
+        id: 6,
         titles: ["System Administrator (Tech Ops)", "Mathematics Tutor"],
         company: "Central Michigan University",
         dates: "2017 - 2020",
@@ -39,7 +57,7 @@ export const experiences = [
         url: "https://www.cmich.edu/"
     },
     {
-        id: 5,
+        id: 7,
         titles: ["Intern", "Campus Ambassador"],
         company: "United Wholesale Mortgage",
         dates: "2019 - 2020",
@@ -48,7 +66,7 @@ export const experiences = [
         url: "https://www.uwm.com/"
     },
     {
-        id: 6,
+        id: 8,
         titles: ["Help Desk Analyst"],
         company: "Apple",
         dates: "2018 - 2019",
