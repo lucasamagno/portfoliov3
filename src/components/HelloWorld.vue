@@ -49,7 +49,7 @@ document.addEventListener('mousemove', (e) => {
       <section id="hero">
         <h1 id="name">Lucas A. Magno</h1>
         <h2>Software Engineer</h2>
-        <p>I build user friendly software solutions and streamline development workflows.</p>
+        <p>Jack of many trades, master of all.</p>
       </section>
 
       <section id="contact">
@@ -88,13 +88,12 @@ document.addEventListener('mousemove', (e) => {
     <div class="content">
       <section id="about">
         <h2>About Me</h2>
-        <p>Hello and welcome! </p>
         <p>
-          I'm Lucas, a Full Stack Software Engineer and 2020 graduate of Central Michigan University's Computer Science program. 
-          Over the last 4 years, I have been actively pursuing freelance work and building technology in the real estate and mortgage industries. 
-          On the side, I work with and mentor students from low-income and underprivelged communities. 
-          I also enjoy snowboarding, making kombucha, and traveling with my girlfriend.
+         Primarily a Software Engineer doing everything from front-end, back-end, DevOps, and/or support work. Spent the last four years in real estate, mortgages, insurance, and B2B SaaS. 
         </p>
+        <p>I enjoy snowboarding, surfing, running, pickleball, climbing, most things outside and away from my computer.</p>
+        <p>On the side, I work with and mentor students from low-income and underprivelged communities.</p>
+        <p>Based in Miami, FL.</p>
       </section>
 
       <hr>
