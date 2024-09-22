@@ -267,7 +267,6 @@ h2 {
   opacity: 80%;
 }
 
-/* Mobile Phones: max-width of 767px */
 @media (max-width: 767px) {
     .container {
         flex-direction: column;
@@ -276,18 +275,18 @@ h2 {
     }
 
     .sidebar {
-        width: 100%; /* Full width */
-        position: static; /* Adjust position for mobile */
-        overflow-y: visible; /* Allow scrolling if needed */
-        padding: 10px; /* Add padding on all sides */
-        box-sizing: border-box; /* Include padding in the width calculation */
+        width: 100%; 
+        position: static;
+        overflow-y: visible; 
+        padding: 10px; 
+        box-sizing: border-box; 
     }
 
     .content {
-        width: 100%; /* Ensure content does not exceed the width of the screen */
+        width: 100%;
         margin: 0;
-        padding: 10px; /* Adjust padding to ensure content fits within the screen */
-        box-sizing: border-box; /* Include padding and border in the element's width */
+        padding: 10px; 
+        box-sizing: border-box; 
     }
 
     #hero, #contact {
@@ -298,8 +297,8 @@ h2 {
     .form-group input[type="email"],
     .form-group input[type="text"],
     .form-group textarea {
-        width: 100%; /* Full width of the container */
-        box-sizing: border-box; /* Include padding and border in the width */
+        width: 100%; 
+        box-sizing: border-box; 
     }
 
     #hero h1 {
@@ -340,7 +339,6 @@ h2 {
     }
 }
 
-/* Tablets: min-width of 768px and max-width of 1366px */
 @media (min-width: 768px) and (max-width: 1366px) {
     .container {  
         display: flex;
