@@ -1,7 +1,7 @@
 export const experiences = [
     {
         id: 1,
-        titles: ["Support Engineer"],
+        titles: ["Technical Support Engineer"],
         company: "SmartBear",
         dates: "2024 - Present",
         description: "As a Support Engineer at SmartBear Software, I provide technical support for the Collaborator product, develop comprehensive documentation, and collaborate with Sales Engineers to seamlessly integrate the product into clients' ecosystems.",
@@ -10,7 +10,7 @@ export const experiences = [
     },
     {
         id: 2,
-        titles: ["Student Agent"],
+        titles: ["Student Mentor"],
         company: "Student Success Agency",
         dates: "2023 - Present",
         description: "Mentored young students, facilitated university and career exploration, and served as a camp counselor, promoting a positive and inclusive environment.",
@@ -19,7 +19,7 @@ export const experiences = [
     },
     {
         id: 3,
-        titles: ["Full Stack Engineer"],
+        titles: ["Full Stack Software Engineer"],
         company: "Sparen Homes",
         dates: "2023 - Present",
         description: "Developed a home listings data aggregation system, integrated frontend and backend functionality enabling home purchase offers, implemented 2FA for enhanced security, and established CI/CD pipelines.",
@@ -29,7 +29,7 @@ export const experiences = [
     },
     {
         id: 4,
-        titles: ["DevOps Engineer", "Release Engineer", "Business Analyst/Scrum Master"],
+        titles: ["DevOps Engineer", "Release Engineer", "Technical Business Analyst"],
         company: "United Wholesale Mortgage",
         dates: "2021 - 2023",
         description: "Automated software delivery with Jenkins pipelines and Octopus deployment processes, coordinated blue-green production releases, monitored and resolved environment issues, and identified automation needs for a Selenium framework.",
