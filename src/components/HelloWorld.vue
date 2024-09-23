@@ -49,7 +49,7 @@ document.addEventListener('mousemove', (e) => {
       <section id="hero">
         <h1 id="name">Lucas A. Magno</h1>
         <h2>Software Engineer</h2>
-        <p>Jack of many trades, master of all.</p>
+        <p>Jack of many trades.</p>
       </section>
 
       <section id="contact">
